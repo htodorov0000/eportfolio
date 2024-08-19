@@ -104,7 +104,7 @@
 										<b>Q4: What functionality is provided by q.join()?</b></br>
 										A: The consumer thread calls q.task_done(), which indicates to the queue that the item in question has been gotten. q.join() blocks execution, thus preventing the program from reaching the print() statement. Once all items have been gotten, join() unblocks execution and the print() statement executes.</br></br>
 										<b>Q5: Extend this producer-consumer code to make the producer-consumer scenario available in a secure way. What technique(s) would be appropriate to apply?</b></br>
-										A: The multiple consumer threads are allowed independent access to the queue. If two or more threads access it at the same time, they can both take the same item. To prevent this, a semaphore can be used as shown in the code <a href="https://github.com/htodorov0000/SecureSoftwareDevelopmentArtefacts/blob/main/Unit3/The%20Producer-Consumer%20Mechanism/ProducerConsumer.py">here</a>.
+										A: The multiple consumer threads are allowed independent access to the queue. If two or more threads access it at the same time, they can both take the same item. To prevent this, a lock can be used as shown in the code <a href="https://github.com/htodorov0000/SecureSoftwareDevelopmentArtefacts/blob/main/Unit3/The%20Producer-Consumer%20Mechanism/ProducerConsumer.py">here</a>.
 										</p>
 							</section>
 							<section id="one">
