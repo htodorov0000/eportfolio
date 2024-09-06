@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Unit 4</title> <!-- add unit number -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="../index.html" class="logo"><strong>⌂</strong> <span>HOME</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="../index.html">Home</a></li>
+							<li><a href="../module1/landing.html">Module 1</a></li>
+							<li><a href="../module2/landing.html">Module 2</a></li>
+							<li><a href="../module3/landing.html">Module 3</a></li>
+							<li><a href="../module4/landing.html">Module 4</a></li>
+							<li><a href="../module5/landing.html">Module 5</a></li>
+							<li><a href="../module6/landing.html">Module 6</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="#" class="button primary fit">Get Started</a></li>
+							<li><a href="#" class="button fit">Log In</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->	
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>Unit 4</h1> <!-- add unit number -->
+									</header>
+										<header>
+										<h2>Exploring Programming Language Concepts</h2> <!-- add unit title -->
+										</header>
+								</div>
+							</section>
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>Learning Outcomes</h2>
+									</header>
+										<p> 1. Explain how and when to use regular expressions in solutions. </br>
+											2. Describe how and when to use recursion in solutions. </br>
+											3. Discuss the security implications of both approaches </p>
+							</section>
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>Artifacts</h2>
+									</header>
+										<header class="major">
+											<h3>Programming Language Concepts</h3>
+										</header>
+										<p> 
+										Q1: What is ReDOS and what part do ‘Evil Regex’ play? </br>
+										A1: ReDOS is a regular expression denial of service attack which uses the fact that Regex may hang for a long amount of time when receiving an input string which takes a long time to iterate upon, leading to the program hanging for a long time.
+										"Evil Regex" is a pattern which accepts strings of very long or indeterminate length, allowing for ReDOS attacks to be performed. Evil Regex can either be part of the program, or alternatively be injected by a malicious user (Weidman, n.d.). </br></br>
+										Q2: What are the common problems associated with the use of regex? How can these be mitigated? </br> 
+										A2: Vulnerability to attacks such as ReDOS is one issue, which can be mitigated by avoiding the Evil Regex pattern (through experience and using various software), and preventing string injection via escaping characters. </br>
+										Another issue is the inherent complexity of writing Regex strings, which can be mitigated using software such as ACRE which checks for errors (Larson, 2018). </br></br>
+										Q3: How and why could regex be used as part of a security solution?</br>
+										A3: Regex could be used for scanning large logs for specific information which pertains to security threats. </br></br>										
+										References:</br>
+										Larson, E. (2018) Automatic Checking of Regular Expressions. 18th IEEE International Working Conference on Source Code Analysis and Manipulation (SCAM).</br>
+										Weidman, A. (n.d.) Regular expression Denial of Service - ReDoS.
+										</p>
+										<header class="major">
+											<h3>Recursion</h3>
+										</header>
+										<p>This task involved creating a Python implementation of Towers of Hanoi along with an algorithm for it to be solved optimally. This can be found <a href="https://github.com/htodorov0000/SecureSoftwareDevelopmentArtefacts/blob/main/Unit4/Seminar/Recursion.py">here</a>.</br>
+										Disks are represented by numbers, the smaller the number the smaller the disk. Users are not allowed to play, but can choose to either step manually through
+										each turn in the solution, or allow the program to step automatically. The user can pick the amount of disks used in the simulation. </br></br>
+										Q: What is the (theoretical) maximum number of disks that your program can move without generating an error? What limits the number of iterations? What is the implication for application and system security?</br>
+										A: The maximum number of disks is 985 because Python will hit its default recursion limit of 1000. Python limits recursions in order to prevent overflow errors and attacks. In order to prevent 
+										the error however, I have set a maximum number of disks which can be inputted.</br></br>
+										References: </br>
+										Cormen, T. & Balkcom, D. (n.d.) Khan Academy: Towers of Hanoi.
+										</p>
+										<header class="major">
+											<h3>Regex</h3>
+										</header>
+										<p>This task involved creating a Regex for determining if a UK postcode is correct based on instructions given by Idealpostcodes(2020). The code can be found <a href="https://github.com/htodorov0000/SecureSoftwareDevelopmentArtefacts/blob/main/Unit4/Seminar/Regex.py">here</a>.</br></br>
+										Q: How do you ensure your solution is not subject to an evil regex attack? </br>
+										A: The Regex string requires only up to the maximum amount of characters in a UK postcode to prevent such attacks.
+										</br></br>
+										References: Idealpostcodes (2020) The UK Postcode Format.</br>	
+										</p>
+							</section>
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>Meeting Notes</h2>
+									</header>
+										<p> <li>25 August 2024
+											<li>Time (UK): 14:00-15:00
+											<li>Venue: Google Meet
+											<li>Attendees: Adriaan Joubert, Hristo Todorov, and Shraddha Gore
+											<li>Agenda:
+											<ul>
+												<li>Allocated work between teammates.
+												<li>Decided on the scope of each section.
+											</ul>
+											<li>Next steps:
+												<ul>
+												<li>Schedule a meeting to work together on the collaborative sections.
+												</ul> </p>
+							</section>
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>Reflection</h2>
+									</header>
+										<p> test </p>
+							</section>
+					</div>
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
