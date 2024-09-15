@@ -91,7 +91,17 @@
 										<header class="major">
 											<h3>Activity - Exploring Python tools and features</h3>
 										</header>
-										<p> test </p>
+										<p> The C code <a href="https://www.my-course.co.uk/pluginfile.php/1199711/mod_page/content/9/secure-software-and-systems-class-programming-activities-buffer-overflow-in-c.pdf">here</a> was
+											tested with both a string shorter and a string longer than the defined buffer. </br></br>
+											<b>Q1: What happens? </b></br>
+											A1: When inputting a shorter string, the program returns the string as expected. When inputting a longer string, a segmentation fault is reported. </br> </br>
+											<b>Q2: What does the output message mean?</b></br>
+											A2: A segmentation fault means that the program is attempting to access a memory location it is not allowed to. This is due to the string overflowing from the expected buffer size into an adjacent memory address,
+											and is a big vulnerability issue. </br></br>
+											Afterwards, the Python code <a href="https://www.my-course.co.uk/pluginfile.php/1199711/mod_page/content/9/secure-software-and-systems-class-programming-activities-buffer-overflow-in-python.pdf">here</a> was tested. </br>
+											An unhandled exception occurs, preventing the program from writing to adjacent memory addresses, therefore addressing the overflow. When running Pylint to analyse the code, it does not find this error.
+											
+										</p>
 										<header class="major">
 											<h3>Activity - The Producer-Consumer Mechanism</h3>
 										</header>
