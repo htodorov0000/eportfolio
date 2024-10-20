@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Unit Number</title> <!-- add unit number -->
+		<title>Unit 6</title> <!-- add unit number -->
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
@@ -49,10 +49,10 @@
 							<section id="one">
 								<div class="inner">
 									<header class="major">
-										<h1>Unit Number</h1> <!-- add unit number -->
+										<h1>Unit 6</h1> <!-- add unit number -->
 									</header>
 										<header>
-										<h2>Title of Unit</h2> <!-- add unit title -->
+										<h2>Using Linters to Support Python Testing</h2> <!-- add unit title -->
 										</header>
 								</div>
 							</section>
@@ -61,28 +61,68 @@
 									<header class="major">
 										<h2>Learning Outcomes</h2>
 									</header>
-										<p> test </p>
+										<p> 
+											<li>Be familiar with using linters to support quality Python code development.
+											<li>Compare and contrast the outputs from linters to recognise their relevance and applicability in different development and testing scenarios.
+											<li>Develop Python code, which is free of error, consistent in its design, and considered to be high quality according to common Python standards.
+										 </p>
 							</section>
 							<section id="one">
 								<div class="inner">
 									<header class="major">
 										<h2>Artifacts</h2>
 									</header>
-										<p> test </p>
+										<header class = "major">
+										<h3>Exploring Linters to Support Testing in Python</h3>
+										</header>
+										<p>The python files used and edited, as well as the error screenshots can be found <a href="https://github.com/htodorov0000/SecureSoftwareDevelopmentArtefacts/tree/main/Unit6/Exploring%20Linters%20to%20Support%20Testing%20in%20Python">here</a>.</p>
+										<p><b>Q1: Run styleLint.py. What happens when the code is run? Can you modify this code for a more favourable outcome? What amendments have you made to the code? </b></br>
+										A1: There are missing indentations, causing an error when the code is run. I have added those and now the program runs correctly.</p>
+										<p><b>Q2: Run pylint on pylintTest.py. Review each of the code errors returned. Can you correct each of the errors identified by pylint?</b></br>
+										A2: Once pylint is run, an error is given: </br>
+										<code>Parsing failed: 'Missing parentheses in call to 'print'. Did you mean print(...)?</code></br>
+										After adding the parentheses and running pylint again, it returns many errors. Once corrected, the program runs without giving an exception.</p>
+										<p><b>Q3: Run flake8 on pylintTest.py. Review the errors returned. In what way does this error message differ from the error message returned by pylint? 
+										Run flake8 on metricTest.py. Can you correct each of the errors returned by flake8? What amendments have you made to the code? </b></br>
+										A3: On pylintTest.py, flake8 returned a slightly different list of errors. The core errors were the same, but the stylistic ones appear to be different.</br>
+										On metricTest.py, flake8 returns a singular syntax error as follows:</br>
+										<code>SyntaxError: invalid character '–' (U+2013)</code></br>
+										The code contains integers at the beginning of each line which should not be there, but flake8 fails to identify these as the main cause of the problem. Even after manually
+										removing those, flake8 still only returns one by one, as the program cannot run due to the lack of identations, therefore making this difficult to fix.</p>
+										
 							</section>
 							<section id="one">
 								<div class="inner">
 									<header class="major">
 										<h2>Meeting Notes</h2>
 									</header>
-										<p> test </p>
+										<p> 
+										<li>Date: 5 September 2024
+										<li>Time (UK): 16:00-17:30
+										<li>Venue: Google Meet
+										<li>Attendees: Adriaan Joubert, Hristo Todorov, and Shraddha Gore
+										<li>Agenda:
+										<ul>
+										<li>Completed some of the collaborative sections.
+										<li>Outlined remaining sections for later.
+										</ul>
+										<li>Next steps:
+										<ul>
+										<li>Meet to work together on the remaining collaborative sections.
+										</ul>
+										</p>
 							</section>
 							<section id="one">
 								<div class="inner">
 									<header class="major">
 										<h2>Reflection</h2>
 									</header>
-										<p> test </p>
+										<p> Despite linters being very important, it was difficult to focus on this topic due to the approaching assignment deadline. It also felt that this topic was out of
+										place, as there is an expectation that the result of examining linters would lead to the team deciding on one for the assignment. I believe this should have been in an earlier
+										unit.</br>
+										Regarding the Design Document, our team completed it and I believe our work to be stellar. I found that with better time management however, we could have presented
+										an even better work.
+										</p>
 							</section>
 					</div>
 				<!-- Footer -->
